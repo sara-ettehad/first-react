@@ -3,11 +3,15 @@ import ReactDOM from "react-dom";
 
 const img = "http://picsum.photos/200";
 
+const customStyle = {
+  color: "red"
+};
+
+customStyle.color = "blue";
+
 ReactDOM.render(
   <div>
-    <h1 className="heading" contentEditable="true">
-      Favorite foods!
-    </h1>
+    <h1 style={customStyle}>Favorite foods!</h1>
 
     <img alt="random" src={img + "?grayscale"} />
 
