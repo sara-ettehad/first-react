@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Heading from "./Heading";
 
 const img = "http://picsum.photos/200";
 
@@ -11,8 +12,7 @@ customStyle.color = "blue";
 
 ReactDOM.render(
   <div>
-    <h1 style={customStyle}>Favorite foods!</h1>
-
+    <Heading />
     <img alt="random" src={img + "?grayscale"} />
 
     <img
